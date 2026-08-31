@@ -352,6 +352,15 @@
             color: #a09d95;
             line-height: 1.45;
         }
+
+        /* Image Styling */
+        .slide-image {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+        }
     </style>
 </head>
 <body>
@@ -360,20 +369,27 @@
 
             <!-- DIAPOSITIVA 1: Título e Idea Central -->
             <section data-background-color="#121513">
-                <div class="title-slide">
-                    <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.85rem; color: var(--color-colombia-gold); margin-bottom: 5px;">Perspectiva Histórica y Geopolítica</p>
-                    <h1>La Guerra Fría y el Conflicto Armado Colombiano</h1>
-                    <p class="subtitle">Dimensión Internacional de una Guerra Local (1940 - Actualidad)</p>
-                    <div class="divider"></div>
-                    
-                    <div class="thesis-box" style="max-width: 850px; text-align: left; margin: 0 auto;">
-                        <p class="thesis-text">
-                            <strong>Tesis principal:</strong> El conflicto colombiano no se explica únicamente por causas internas bipartidismo y disputa de la tierra; la <span class="hl-gold">Guerra Fría</span> actuó como un <span class="hl-gold">catalizador internacional</span> que polarizó y prolongó la violencia a través de ideologías revolucionarias por un lado y doctrinas contrainsurgentes por el otro.
-                        </p>
-                    </div>
-                    
-                    <div class="meta-info">
-                        Análisis Académico • Dimensión Internacional
+                <div class="slide-container" style="justify-content: center;">
+                    <div class="grid-2" style="grid-template-columns: 1.25fr 0.75fr; align-items: center; gap: 40px;">
+                        <div>
+                            <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.8rem; color: var(--color-colombia-gold); margin-bottom: 5px;">Perspectiva Histórica y Geopolítica</p>
+                            <h1 style="font-size: 2.5rem !important; line-height: 1.1; margin-bottom: 10px;">La Guerra Fría y el Conflicto Armado Colombiano</h1>
+                            <p style="font-size: 1.1rem; color: #d1cdc0; margin-bottom: 15px; font-family: var(--r-main-font);">Dimensión Internacional de una Guerra Local (1940 - Actualidad)</p>
+                            <div style="width: 100px; height: 3px; background: linear-gradient(90deg, var(--color-soviet), var(--color-colombia-gold), var(--color-us)); margin-bottom: 20px;"></div>
+                            
+                            <div class="thesis-box" style="padding: 20px; margin-top: 0;">
+                                <p class="thesis-text" style="font-size: 1.05rem;">
+                                    <strong>Tesis principal:</strong> El conflicto colombiano no se explica únicamente por causas internas (bipartidismo y disputa de la tierra); la <span class="hl-gold">Guerra Fría</span> actuó como un <span class="hl-gold">catalizador internacional</span> que polarizó y prolongó la violencia a través de ideologías revolucionarias por un lado y doctrinas contrainsurgentes por el otro.
+                                </p>
+                            </div>
+                            
+                            <div style="font-size: 0.75rem; color: #8c887d; margin-top: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
+                                Análisis Académico • Dimensión Internacional
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/cold_war_colombia.jpg" class="slide-image" style="border: 2px solid rgba(201, 160, 84, 0.25); max-height: 520px; object-fit: cover;" alt="La Guerra Fría y Colombia">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -386,19 +402,25 @@
                         <h2>Alineación Bipolar y Primeras Tensiones</h2>
                     </div>
                     <div class="slide-content">
-                        <p style="margin-top: 0; margin-bottom: 20px; font-size: 0.95rem;">La consolidación del orden internacional bipolar redefinió la violencia política tradicional en Colombia bajo la retórica global anticomunista.</p>
+                        <p style="margin-top: 0; margin-bottom: 15px; font-size: 0.95rem;">La consolidación del orden internacional bipolar redefinió la violencia política tradicional en Colombia bajo la retórica global anticomunista.</p>
                         
-                        <div class="grid-2">
-                            <div class="card colombia">
-                                <h3><i class="fa-solid fa-burst"></i> El Bogotazo (1948)</h3>
-                                <p style="font-size: 0.88rem; margin-bottom: 10px;">La fractura social provocada por el asesinato de <span class="hl-gold">Jorge Eliécer Gaitán</span> coincidió con la IX Conferencia Panamericana en Bogotá (creación de la OEA).</p>
-                                <p style="font-size: 0.82rem; color: #a09d95; margin: 0;">Desde el gobierno se acusó una supuesta <strong>injerencia comunista internacional</strong> en las revueltas, intensificando la polarización política partidista y justificando medidas excepcionales.</p>
+                        <div class="grid-2" style="grid-template-columns: 0.75fr 1.25fr; gap: 25px;">
+                            <div>
+                                <img src="images/bogotazo_korea.jpg" class="slide-image" style="max-height: 380px; object-fit: cover;" alt="El Bogotazo y la Guerra de Corea">
+                                <p style="font-size: 0.7rem; color: #7c7a72; margin-top: 8px; font-style: italic; text-align: center;">Representación: Incendios en el Bogotazo (1948) e infantería en Corea (1950).</p>
                             </div>
-                            
-                            <div class="card us">
-                                <h3><i class="fa-solid fa-shield"></i> La Guerra de Corea (1950-1953)</h3>
-                                <p style="font-size: 0.88rem; margin-bottom: 10px;">Colombia participó militarmente enviando al <span class="hl-us">Batallón Colombia</span> para pelear del lado del bloque occidental liderado por EE. UU.</p>
-                                <p style="font-size: 0.82rem; color: #a09d95; margin: 0;">Esta cooperación militar estrecha introdujo tácticas contrainsurgentes modernas en las fuerzas armadas colombianas y consolidó una alianza geopolítica incondicional con Washington.</p>
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <div class="card colombia" style="padding: 15px 20px;">
+                                    <h3><i class="fa-solid fa-burst"></i> El Bogotazo (1948)</h3>
+                                    <p style="font-size: 0.85rem; margin-bottom: 5px;">La fractura social provocada por el asesinato de <span class="hl-gold">Jorge Eliécer Gaitán</span> coincidió con la IX Conferencia Panamericana en Bogotá (creación de la OEA).</p>
+                                    <p style="font-size: 0.78rem; color: #a09d95; margin: 0;">Desde el gobierno se acusó una supuesta <strong>injerencia comunista internacional</strong>, polarizando el discurso nacional y legitimando el estado de sitio.</p>
+                                </div>
+                                
+                                <div class="card us" style="padding: 15px 20px;">
+                                    <h3><i class="fa-solid fa-shield"></i> La Guerra de Corea (1950-1953)</h3>
+                                    <p style="font-size: 0.85rem; margin-bottom: 5px;">Colombia fue el único país latinoamericano en enviar tropas militares (el <span class="hl-us">Batallón Colombia</span>) bajo la coalición de la ONU dirigida por EE. UU.</p>
+                                    <p style="font-size: 0.78rem; color: #a09d95; margin: 0;">Esta estrecha cooperación militar facilitó la <strong>importación de doctrinas de contrainsurgencia</strong> y técnicas modernas en las fuerzas militares locales.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -418,28 +440,30 @@
                     </div>
                     <div class="slide-content">
                         <div class="grid-2" style="grid-template-columns: 1fr 1.25fr; gap: 30px;">
-                            <div>
-                                <div class="card ussr" style="background: rgba(184, 58, 56, 0.04); margin-bottom: 15px;">
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <div class="card ussr" style="background: rgba(184, 58, 56, 0.04); padding: 15px 20px;">
                                     <h3><i class="fa-solid fa-star"></i> Revolución Cubana (1959)</h3>
-                                    <p style="font-size: 0.85rem; margin: 0; line-height: 1.5;">El triunfo del castrismo en la isla exportó el modelo de la vía armada y la teoría del "foco revolucionario" en América Latina, convirtiéndose en el faro ideológico y de adiestramiento de las nacientes guerrillas de izquierda colombianas.</p>
+                                    <p style="font-size: 0.8rem; margin: 0; line-height: 1.4;">El triunfo del castrismo en la isla exportó la vía armada y la teoría del "foquismo" guevarista, sirviendo de inspiración a las insurgencias colombianas.</p>
                                 </div>
-                                <p style="font-size: 0.8rem; color: #a09d95; margin: 0; line-height: 1.4;">La ruptura Sino-Soviética y el debate sobre la vía electoral frente a la armada fragmentaron la izquierda colombiana, reflejándose en las distintas doctrinas e identidades de los grupos armados.</p>
+                                <div>
+                                    <img src="images/revolucion_selva.jpg" class="slide-image" style="border: 1px solid rgba(184, 58, 56, 0.15); max-height: 230px; width: 100%; object-fit: cover;" alt="Revolución en la Selva">
+                                </div>
                             </div>
                             
                             <div>
                                 <h3 style="font-family: var(--r-main-font); font-size: 1.05rem; color: var(--color-soviet); margin-top: 0; margin-bottom: 10px;"><i class="fa-solid fa-circle-nodes"></i> Origen y Orientación de las Insurgencias</h3>
-                                <div class="timeline" style="border-left-color: rgba(184, 58, 56, 0.25);">
-                                    <div class="timeline-item soviet" style="margin-bottom: 12px;">
-                                        <div class="timeline-date soviet" style="font-size: 1rem;">ELN (1964) • Castrista y Foquista</div>
-                                        <div class="timeline-title">El Ejército de Liberación Nacional nace bajo la influencia de la Revolución Cubana. Sus fundadores viajaron a Cuba becados para entrenamiento ideológico y militar.</div>
+                                <div class="timeline" style="border-left-color: rgba(184, 58, 56, 0.25); margin: 5px 0;">
+                                    <div class="timeline-item soviet" style="margin-bottom: 10px;">
+                                        <div class="timeline-date soviet" style="font-size: 0.95rem;">ELN (1964) • Castrista y Foquista</div>
+                                        <div class="timeline-title" style="font-size: 0.8rem;">Nace del descontento universitario. Fundadores recibieron entrenamiento ideológico y militar directo en Cuba.</div>
                                     </div>
-                                    <div class="timeline-item soviet" style="margin-bottom: 12px;">
-                                        <div class="timeline-date soviet" style="font-size: 1rem;">FARC (1964) • Comunismo Rural Ortodoxo</div>
-                                        <div class="timeline-title">Surgidas de autodefensas campesinas y ligadas formalmente al Partido Comunista Colombiano (PCC), alineado con la línea tradicional de Moscú.</div>
+                                    <div class="timeline-item soviet" style="margin-bottom: 10px;">
+                                        <div class="timeline-date soviet" style="font-size: 0.95rem;">FARC (1964) • Comunismo Rural Ortodoxo</div>
+                                        <div class="timeline-title" style="font-size: 0.8rem;">Evolución de autodefensas campesinas, vinculadas históricamente al Partido Comunista de línea soviética.</div>
                                     </div>
-                                    <div class="timeline-item soviet">
-                                        <div class="timeline-date soviet" style="font-size: 1rem;">EPL (1967) • Corriente Maoísta</div>
-                                        <div class="timeline-title">Brazo armado del Partido Comunista de Colombia (Marxista-Leninista), partidario del pensamiento de Mao Tse-Tung y la guerra popular campesina.</div>
+                                    <div class="timeline-item soviet" style="margin-bottom: 0;">
+                                        <div class="timeline-date soviet" style="font-size: 0.95rem;">EPL (1967) • Corriente Maoísta</div>
+                                        <div class="timeline-title" style="font-size: 0.8rem;">Inspiración en el campesinado y la tesis de la guerra popular prolongada del Partido Comunista de orientación pro-Pekín.</div>
                                     </div>
                                 </div>
                             </div>
@@ -460,23 +484,28 @@
                         <h2>La Respuesta Contrainsurgente de EE. UU.</h2>
                     </div>
                     <div class="slide-content">
-                        <p style="margin-top: 0; margin-bottom: 15px; font-size: 0.95rem;">Para evitar el surgimiento de "nuevas Cubas", EE. UU. implementó en la región medidas de disuasión ideológica y militar.</p>
+                        <p style="margin-top: 0; margin-bottom: 15px; font-size: 0.95rem;">Para contrarrestar la influencia socialista, EE. UU. desplegó una fuerte estrategia militar y de seguridad nacional en Colombia.</p>
                         
-                        <div class="grid-2" style="gap: 25px;">
-                            <div class="card us">
-                                <h3><i class="fa-solid fa-shield-halved"></i> Doctrina de Seguridad Nacional</h3>
-                                <ul class="custom-list us" style="font-size: 0.85rem; margin: 0;">
-                                    <li><strong>El "Enemigo Interno":</strong> Se redefinió la defense nacional; el enemigo ya no era un ejército extranjero, sino los ciudadanos u organizaciones con ideología de izquierda en el interior del país.</li>
-                                    <li><strong>Cooperación e Instrucción:</strong> Asesoramiento militar, entrenamiento en la Escuela de las Américas y provisión de equipamiento logístico contrainsurgente.</li>
-                                    <li><strong>Acción Cívico-Militar:</strong> Programas de desarrollo social mínimo (Alianza para el Progreso) para mitigar la influencia de las ideas socialistas en zonas marginadas.</li>
-                                </ul>
+                        <div class="grid-2" style="grid-template-columns: 0.75fr 1.25fr; gap: 25px;">
+                            <div>
+                                <img src="images/helipcotero_tactico.jpg" class="slide-image" style="border: 1px solid rgba(74, 105, 132, 0.15); max-height: 380px; object-fit: cover;" alt="Plan Lazo y Helicópteros">
+                                <p style="font-size: 0.7rem; color: #7c7a72; margin-top: 8px; font-style: italic; text-align: center;">Táctica: Ofensiva militar contrainsurgente planificada con asesoramiento del Pentágono.</p>
                             </div>
-                            
-                            <div class="card us">
-                                <h3><i class="fa-solid fa-gun"></i> Plan Lazo e Intervenciones Militares</h3>
-                                <p style="font-size: 0.85rem; margin-bottom: 12px;">Plan militar formulado a partir de las recomendaciones del general estadounidense <span class="hl-us">William P. Yarborough</span> en 1962, buscando reprimir militarmente los focos de autodefensa del campesinado.</p>
-                                <div style="background: rgba(0,0,0,0.2); border-left: 3px solid var(--color-us); padding: 8px 12px; font-size: 0.8rem; font-style: italic; border-radius: 3px;">
-                                    <strong>Caso Emblemático (1964):</strong> El ataque militar a la autodenominada "República de Marquetalia". Esta ofensiva armada del Estado colombiano, fuertemente asesorada y financiada bajo doctrinas contrainsurgentes de EE. UU., precipitó la transformación de las autodefensas rurales en el nacimiento formal de las <strong>FARC</strong>.
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <div class="card us" style="padding: 15px 20px;">
+                                    <h3><i class="fa-solid fa-shield-halved"></i> Doctrina de Seguridad Nacional</h3>
+                                    <ul class="custom-list us" style="font-size: 0.8rem; margin: 0;">
+                                        <li><strong>"Enemigo Interno":</strong> Foco defensivo puesto en la contrainsurgencia ideológica y el control social de la oposición.</li>
+                                        <li><strong>Capacitación:</strong> Escuela de las Américas brindó entrenamiento en guerra no convencional y tácticas contrainsurgentes.</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="card us" style="padding: 15px 20px;">
+                                    <h3><i class="fa-solid fa-gun"></i> Plan Lazo y el Detonante de las FARC</h3>
+                                    <p style="font-size: 0.8rem; margin-bottom: 5px;">Diseñado en 1962 bajo la asesoría especial militar de EE. UU. del general William P. Yarborough.</p>
+                                    <div style="background: rgba(0,0,0,0.25); border-left: 2px solid var(--color-us); padding: 5px 10px; font-size: 0.75rem; font-style: italic; border-radius: 3px;">
+                                        <strong>Caso Marquetalia (1964):</strong> El bombardeo de esta cooperativa campesina armada, catalogada como "república independiente" comunista, catalizó el nacimiento de las <strong>FARC</strong>.
+                                    </div>
                                 </div>
                             </div>
                         </div>
